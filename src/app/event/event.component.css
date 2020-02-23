@@ -1,0 +1,48 @@
+.input {
+  width: 220px;
+  height: 30px;
+  background-color: #ffffff;
+  padding: 4px 6px;
+  border: 1px solid #cccccc;
+  line-height: 30px;
+  display: inline-block;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+//margin-bottom: 10px;
+  margin-right: 16px;
+  font-size: 14px;
+  color: #555555;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+/*.select {*/
+/*//width: 220px;*/
+/*  height: 30px;*/
+/*//background-color: #ffffff;*/
+/*//padding: 4px 6px;*/
+/*//border: 1px solid #cccccc;*/
+/*//font-size: 14px;*/
+/*//color: #555555;*/
+/*//vertical-align: middle;*/
+/*  border-radius: 4px;*/
+/*  margin-right: 10px;*/
+/*}*/
+
+.map-responsive{
+  overflow: hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe {
+  left: 1px;
+  top: 0;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+}
+
+.table-bordered {
+  border: solid 1px;
+}
+
+

@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c8a4528-4af0-4dad-bf03-db026df4946d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/event/event.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/event/event.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/event/event.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/delete-list/delete-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/delete-list/delete-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/delete-list/delete-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/edit-list/edit-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/edit-list/edit-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/edit-list/edit-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/list/list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/map/map.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/map/map.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/map/map.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +53,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="ts.external.directory.path" value="C:\Users\nanav\Documents\projects\diary-test3\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nanav\Documents\projects\diary-test3" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (diary-test3)" type="JavaScriptTestRunnerKarma">
@@ -81,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582490849327</updated>
-      <workItem from="1582490857480" duration="1249000" />
+      <workItem from="1582490857480" duration="1702000" />
     </task>
     <task id="LOCAL-00001" summary="myProject">
       <created>1582491871088</created>
@@ -90,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582491871088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="myProject">
+      <created>1582492553795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582492553795</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,10 +143,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="754" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582492413630" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582492486275">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582492551146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582492486275" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582492551146" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1582492352405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -117,10 +155,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582492061608" />
-    <state x="275" y="94" key="Vcs.Push.Dialog.v2" timestamp="1582492511173">
+    <state x="275" y="94" key="Vcs.Push.Dialog.v2" timestamp="1582492562332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582492511173" />
+    <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582492562332" />
     <state x="459" y="138" key="git4idea.merge.GitPullDialog" timestamp="1582492091789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

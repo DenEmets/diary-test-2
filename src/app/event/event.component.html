@@ -1,0 +1,50 @@
+<div class="container">
+  <form>
+    <div class="control-group">
+      <label class="control-label">Введите название события:</label>
+      <input class="input" type="text" textarea placeholder="Название события">
+    </div>
+  <br>
+    <div class="control-group">
+      <label class="description">Описание:</label>
+      <input class="input" type="text">
+    </div>
+  <br>
+    <div class="control-group">
+      <label class="control-label">Дата:</label>
+      <input class="input" type="date" textarea placeholder="Дата:">
+    </div>
+  <br>
+    <div>
+      <label>Как вы к этому относитесь:</label>
+      <input type="radio" name="Contact" value="Положительно">Положительно
+      <input type="radio" name="Contact" value="Нейтрально">Нейтрально
+      <input type="radio" name="Contact" value="Отрицательно">Отрицательно
+    </div>
+  <br>
+    <div>
+      <label class="control-label">Ссылка на фото:</label>
+      <input class="input">
+      <button class="btn btn-primary" (click)="addImg()">Показать</button><br>
+      <img src="imgUrl" class="img-rounded">
+    </div>
+  <br>
+    <div>
+      <label class="control-label">Ссылка на видео:</label>
+      <input class="input">
+      <button class="btn btn-primary" (click)="addVideo()">Показать</button>
+      <p>{{videoUrl}}</p>
+    </div>
+  </form>
+</div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82067.75251194948!2d36.2698731396484!3d49.99978470251004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1581164812946!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+
+  <button class="btn btn-primary" routerLink="/">Добавить</button>
+
+
+
+
+

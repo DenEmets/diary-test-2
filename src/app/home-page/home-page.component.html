@@ -1,0 +1,13 @@
+<input class="input" type="search" textarea placeholder="Поиск" [(ngModel)]="placeholderSearch">
+{{searchEvent}}
+<select [(ngModel)]="textSortByRelative" class="select" type="text">
+  <option value="По отношению к событию:">По отношению к событию:</option>
+  <option value="">От плохого к хорошему</option>
+  <option value="">От хорошего к плохому</option>
+</select>
+<select [(ngModel)]="textSortByDate" class="select">
+  <option value="По дате:">По дате:</option>
+  <option value="">По возрастанию</option>
+  <option value="">По убыванию</option>
+</select>
+<app-list></app-list>
