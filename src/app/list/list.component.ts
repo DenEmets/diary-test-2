@@ -16,9 +16,9 @@ export class ListComponent implements OnInit {
     {title: 'та дам!', text: 'ура', date: '2020', relative: 'отрицательно', id: '2', complete: true}
   ];
 
-  constructor() {
-
-}
+  constructor(
+    private server: MainService
+  ) { }
 
   ngOnInit() {
   }

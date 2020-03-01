@@ -1,5 +1,6 @@
-import {Component, OnInit, Output} from '@angular/core';
+import {Component, OnInit, ViewChild, Input} from '@angular/core';
 import {Item} from '../models/item.model';
+import {MainService} from '../services/main.service';
 
 @Component({
   selector: 'app-event',
@@ -7,7 +8,7 @@ import {Item} from '../models/item.model';
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
-  items: Item[];
+  @Input() items: Item[];
   item: Item = {
     id: '',
     title: '',
@@ -16,8 +17,10 @@ export class EventComponent implements OnInit {
     relative: '',
     complete: false,
   };
+  // @ts-ignore
+  @ViewChild('form') form;
 
-  constructor() {
+  constructor(private server: MainService) {
 
   }
 
@@ -34,5 +37,6 @@ export class EventComponent implements OnInit {
       complete: false
     };
     this.items.unshift(newItem);
+    this.form.reset();
   }
 }

@@ -3,7 +3,7 @@
     <div class="col-6 m-auto">
       <div class="card mb-5">
         <div class="card-body">
-          <form (ngSubmit)="addEvent()">
+          <form (ngSubmit)="addEvent()" #form="ngForm">
             <div class="form-group">
               <label for="title">Введите название события:</label>
               <input type="text" class="form-control" id="title" [(ngModel)]="item.title" name="title">
@@ -22,7 +22,13 @@
               <input type="radio" name="Contact" id="relative" value="neu" [(ngModel)]="item.relative" name="relative"> Нейтрально
               <input type="radio" name="Contact" id="relative" value="neg" [(ngModel)]="item.relative" name="relative"> Негативно
             </div>
-           </form>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82067.75251194948!2d36.2698731396484!3d49.99978470251004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1581164812946!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <button class="btn btn-primary" routerLink="/"
+                    [disabled]=" !item.title || !item.text || !item.date || !item.relative "
+            >Добавить</button>
+            </form>
           </div>
       </div>
     </div>
@@ -42,12 +48,7 @@
 <!--      <p>{{videoUrl}}</p>-->
 <!--    </div>-->
 
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82067.75251194948!2d36.2698731396484!3d49.99978470251004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1581164812946!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </div>
-  <button class="btn btn-primary" routerLink="/"
-          [disabled]=" !item.title || !item.text || !item.date || !item.relative "
-  >Добавить</button>
+
 
 
 

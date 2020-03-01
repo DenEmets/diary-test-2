@@ -10,6 +10,7 @@ import { EditListComponent } from './list/edit-list/edit-list.component';
 import { DeleteListComponent } from './list/delete-list/delete-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import {FormsModule} from '@angular/forms';
+import {MainService} from './services/main.service';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,7 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
