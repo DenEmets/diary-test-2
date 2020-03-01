@@ -19,7 +19,8 @@ import {FormsModule} from '@angular/forms';
         ListComponent,
         EditListComponent,
         DeleteListComponent,
-        HomePageComponent
+        HomePageComponent,
+
     ],
   imports: [
     BrowserModule,

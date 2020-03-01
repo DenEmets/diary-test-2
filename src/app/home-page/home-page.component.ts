@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Item} from '../list/list.component';
+
 
 @Component({
   selector: 'app-home-page',
@@ -11,8 +11,6 @@ export class HomePageComponent implements OnInit {
   textSortByRelative: any = 'По отношению к событию:';
   textSortByDate: any = 'По дате:';
   searchEvent: any = '';
-
-
 
   constructor() { }
   ngOnInit() {

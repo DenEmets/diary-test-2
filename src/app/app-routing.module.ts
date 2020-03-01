@@ -4,11 +4,11 @@ import {EventComponent} from './event/event.component';
 import {MapComponent} from './map/map.component';
 import {HomePageComponent} from './home-page/home-page.component';
 
-
 const routes: Routes = [
   { path: '', component: HomePageComponent},
   { path: 'event', component: EventComponent },
-  { path: 'map', component: MapComponent }
+  { path: 'map', component: MapComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

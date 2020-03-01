@@ -1,10 +1,24 @@
-<div class="card">
-  <h6>Дата: Отношение к событию:</h6>
-  <hr>
-  <h3>Название события</h3>
-  <h5>Описание: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, unde.</h5>
-  <app-edit-list></app-edit-list><app-delete-list></app-delete-list>
+<div class="container mt-5">
+  <br>
+  <div class="alert alert-info" *ngIf="!items.length">У вас нет событий</div>
+  <div class="row">
+    <div class="col-xs-8" *ngFor="let item of items">
+      <div class="card mt-5" [ngClass]="{'text-white bg-success': item.complete}">
+        <div class="card-body">
+          <h6>{{ item.date }} - {{ item.relative }}</h6>
+          <hr>
+          <div class="card-title">
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.text }}</p>
+          </div>
+        </div>
+        <app-edit-list></app-edit-list><button class="btn btn-danger" (click)="deleteEvent(item.id)">Удалить</button>
+        <button class="btn btn-success" (click)="item.complete=!item.complete">{{ item.complete ? 'Возобновить' : 'Завершить' }} событие</button>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 
 
