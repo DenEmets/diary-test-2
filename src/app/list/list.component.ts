@@ -1,31 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Item } from '../models/item.model';
 import {MainService} from '../services/main.service';
-
 
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css'],
-  providers: [MainService]
-})
+  styleUrls: ['./list.component.css']
+  })
 export class ListComponent implements OnInit {
-  items: Item[] = [
-    {title: 'привет', text: 'хай', date: '2019', relative: 'положительно', id: '1', complete: false},
-    {title: 'та дам!', text: 'ура', date: '2020', relative: 'отрицательно', id: '2', complete: true}
-  ];
+  items: Item[] = [];
 
 
-  constructor(
-    private server: MainService
-  ) { }
+  constructor(private mainService: MainService) { }
 
   ngOnInit() {
+    this.items = this.items.concat(this.mainService.getItems());
   }
 
   deleteEvent(id: string) {
-    // confirm('Вы точно хотите удалить это событие, возможно, очень важное для вас?');
     this.items = this.items.filter((item) => item.id !== id);
   }
 }

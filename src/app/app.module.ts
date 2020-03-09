@@ -7,10 +7,10 @@ import { MapComponent } from './map/map.component';
 import { EventComponent } from './event/event.component';
 import {ListComponent} from './list/list.component';
 import { EditListComponent } from './list/edit-list/edit-list.component';
-import { DeleteListComponent } from './list/delete-list/delete-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import {FormsModule} from '@angular/forms';
-import {MainService} from './services/main.service';
+import { SearchPipe } from './pipes/search.pipe';
+
 
 @NgModule({
     declarations: [
@@ -19,16 +19,15 @@ import {MainService} from './services/main.service';
         EventComponent,
         ListComponent,
         EditListComponent,
-        DeleteListComponent,
         HomePageComponent,
+        SearchPipe,
 
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

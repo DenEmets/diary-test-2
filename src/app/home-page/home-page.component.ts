@@ -7,16 +7,14 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  placeholderSearch: any;
-  textSortByRelative: any = 'По отношению к событию:';
-  textSortByDate: any = 'По дате:';
-  searchEvent: any = '';
+  searchTitleText: '';
+  sortByRelative: 'По отношению к событию:';
+  sortByDate: 'По дате:';
 
   constructor() { }
   ngOnInit() {
-  }
-
-  onClick() {
 
   }
+
+
 }

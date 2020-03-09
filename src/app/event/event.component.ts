@@ -1,6 +1,7 @@
-import {Component, OnInit, ViewChild, Input} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Item} from '../models/item.model';
 import {MainService} from '../services/main.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-event',
@@ -8,7 +9,7 @@ import {MainService} from '../services/main.service';
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
-  @Input() items: Item[];
+  public items: Item[];
   item: Item = {
     id: '',
     title: '',
@@ -20,15 +21,16 @@ export class EventComponent implements OnInit {
   // @ts-ignore
   @ViewChild('form') form;
 
-  constructor(private server: MainService) {
+  constructor(private mainService: MainService, private router: Router) {
 
   }
 
   ngOnInit() {
+    this.items = this.mainService.getItems();
   }
 
   addEvent() {
-    const newItem = {
+    const newItem: Item = {
       id: String(this.items.length + 1),
       title: this.item.title,
       text: this.item.text,
@@ -36,7 +38,8 @@ export class EventComponent implements OnInit {
       relative: this.item.relative,
       complete: false
     };
-    this.items.unshift(newItem);
+    this.mainService.addItem(newItem);
     this.form.reset();
+    this.router.navigate(['/']);
   }
 }
